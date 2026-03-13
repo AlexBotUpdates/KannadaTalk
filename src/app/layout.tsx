@@ -14,24 +14,35 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
+  title: "KannadaTalk – Learn Spoken Kannada",
+  description:
+    "A Duolingo-style web app for English speakers to learn practical, everyday spoken Kannada through short interactive lessons.",
+  keywords: [
+    "Kannada",
+    "learn Kannada",
+    "language learning",
+    "Kannada phrases",
+    "Duolingo-style",
+    "Next.js",
+    "TypeScript",
+  ],
+  authors: [{ name: "KannadaTalk" }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "KannadaTalk – Learn Spoken Kannada",
+    description:
+      "Practice core Kannada phrases with a friendly, game-like learning experience tailored for English speakers.",
+    url: "http://localhost:3000",
+    siteName: "KannadaTalk",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
+    title: "KannadaTalk – Learn Spoken Kannada",
+    description:
+      "Quick, modern web app for picking up essential spoken Kannada phrases.",
   },
 };
 

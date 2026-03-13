@@ -1,141 +1,109 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+## KannadaTalk – Learn Spoken Kannada
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+A focused, Duolingo-style web app that helps English speakers learn practical, everyday Kannada phrases through short, interactive lessons.
 
-## ✨ Technology Stack
+### 🌟 What it does
 
-This scaffold provides a robust foundation built with:
-
-### 🎯 Core Framework
-- **⚡ Next.js 16** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
-
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
-
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
-
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Fetch** - Promise-based HTTP request
-
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
-
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
-
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
-
-## 🎯 Why This Scaffold?
-
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
-
-## 🚀 Quick Start
-
-```bash
-# Install dependencies
-bun install
-
-# Start development server
-bun run dev
-
-# Build for production
-bun run build
-
-# Start production server
-bun start
-```
-
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
-
-## 🤖 Powered by Z.ai
-
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
-
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
-
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
-
-## 📁 Project Structure
-
-```
-src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
-```
-
-## 🎨 Available Features & Components
-
-This scaffold includes a comprehensive set of modern web development tools:
-
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
-
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
-
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
-
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Fetch + TanStack Query
-- **State Management**: Simple and scalable with Zustand
-
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
-
-## 🤝 Get Started with Z.ai
-
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+- **Core lesson** on greetings and introductions in Kannada
+- **Multiple-choice “listening-style” exercises**: see a Kannada phrase, pick the correct English meaning
+- **Transliteration support** to help with pronunciation
+- **XP score** so you get instant feedback and motivation
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js 18+**
+- **npm** (comes with Node)
+
+### 1. Install dependencies
+
+From the project root:
+
+```bash
+npm install
+```
+
+### 2. Configure the database
+
+This project uses **Prisma** with a local SQLite database.
+
+Create a `.env` file in the project root (this is already created if you followed the assistant’s steps):
+
+```env
+DATABASE_URL="file:./dev.db"
+```
+
+Then push the Prisma schema to create the SQLite database:
+
+```bash
+npx prisma db push
+```
+
+### 3. Run the dev server
+
+Because the default `npm run dev` script uses `tee` (a Unix tool), on Windows it’s easier to call Next.js directly:
+
+```bash
+npx next dev -p 3000
+```
+
+Then open `http://localhost:3000` in your browser.
+
+---
+
+## 🧠 How the app works
+
+- The **home page** (`/`) is the main learning experience.
+- You’ll see:
+  - A short introduction to the app
+  - A **lesson card** with Kannada phrases for greetings and introductions
+  - For each question:
+    - The **Kannada script**
+    - A **Latin transliteration**
+    - 4 possible **English meanings** (one correct, three distractors)
+- Select an answer to see immediate feedback and earn XP.
+- Finish all questions to see a small **summary screen** with your total XP and phrases practiced.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4 + shadcn/ui components
+- **Database / ORM**: Prisma with SQLite
+
+---
+
+## 📁 Project Structure (high level)
+
+```text
+src/
+  app/
+    layout.tsx     # Root layout, metadata, fonts
+    page.tsx       # KannadaTalk lesson experience (home page)
+  components/
+    ui/            # Reusable shadcn/ui components
+```
+
+---
+
+## ✅ Scripts (npm)
+
+Most common commands:
+
+- **Development**: `npx next dev -p 3000`
+- **Prisma DB push**: `npx prisma db push`
+- **Build**: `npm run build`
+- **Lint**: `npm run lint`
+
+> Note: the provided `npm run dev` and `npm run start` scripts assume a Unix-like environment because of `tee` and `cp`. On Windows PowerShell, prefer `npx next dev -p 3000` for development unless you install equivalents or adjust the scripts.
+
+---
+
+## 📜 License
+
+You’re free to use and modify this project for your own Kannada-learning experiments or to build a richer course on top of it.
